@@ -296,82 +296,31 @@ a {
 .hero-visual {
     position: relative;
     min-width: 0;
-    padding: 40px 18px 100px 10px;
+    padding: 40px 0;
 }
 
 .hero-visual::before {
     content: "";
     position: absolute;
-    inset: 0 8% 12% 9%;
+    inset: 4% 6% 0;
     z-index: -1;
     background: var(--mint-pale);
     border-radius: 44% 56% 58% 42% / 44% 35% 65% 56%;
     transform: rotate(-3deg);
 }
 
-.browser-frame,
-.live-frame {
+.hero-artwork {
+    margin: 0;
     overflow: hidden;
-    border: 1px solid rgba(12, 47, 58, 0.18);
+    border: 8px solid var(--white);
+    border-radius: 22px;
     background: var(--white);
     box-shadow: var(--shadow);
-}
-
-.browser-frame {
-    border-radius: 20px;
     transform: rotate(1.2deg);
 }
 
-.browser-toolbar {
-    height: 34px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 0 12px;
-    color: #819096;
-    background: #e5e9e6;
-    font-size: 9px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.browser-toolbar i {
-    width: 8px;
-    height: 8px;
-    background: #afbbb7;
-    border-radius: 50%;
-}
-
-.browser-toolbar span {
-    margin-left: 6px;
-}
-
-.live-frame {
-    position: absolute;
-    right: -18px;
-    bottom: 18px;
-    width: 62%;
-    padding: 7px;
-    border-radius: 16px;
-    transform: rotate(-2.2deg);
-}
-
-.live-frame > span {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 1;
-    padding: 4px 7px;
-    color: var(--dark);
-    background: var(--mint);
-    border-radius: 999px;
-    font-size: 8px;
-    font-weight: 900;
-    letter-spacing: 0.12em;
-}
-
-.live-frame img {
-    border-radius: 10px;
+.hero-artwork img {
+    width: 100%;
 }
 
 .proof-strip {
@@ -894,23 +843,12 @@ a {
     }
 
     .hero-visual {
-        padding: 20px 5px 76px 0;
+        padding: 20px 0 34px;
     }
 
-    .browser-frame {
+    .hero-artwork {
+        border-width: 5px;
         border-radius: 14px;
-    }
-
-    .browser-toolbar {
-        height: 26px;
-    }
-
-    .live-frame {
-        right: 0;
-        bottom: 16px;
-        width: 68%;
-        padding: 5px;
-        border-radius: 11px;
     }
 
     .proof-grid {
